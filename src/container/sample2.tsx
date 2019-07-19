@@ -16,9 +16,8 @@ class Sample2 extends React.Component<Props> {
   render() {
     return (
       <div>
-        <p>Test</p>
-        {/* <input type="text" onChange={this.props.onChangeHandler} />
-        <p>{this.props.text}</p> */}
+        <p>stateContent</p>
+        <p>{this.props.text}</p> 
       </div>
     );
   }  

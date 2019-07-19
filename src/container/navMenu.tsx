@@ -9,6 +9,9 @@ type DispatchProps = ReturnType<typeof mapDispatchToProps>;
 type Props = StateProps & DispatchProps & RouteComponentProps;
 
 class NavMenu extends React.Component<Props>{
+    constructor(props: Props) {
+        super(props);
+    }
     render(){
         return(
             <div>
@@ -18,7 +21,6 @@ class NavMenu extends React.Component<Props>{
                 <button onClick={()=>{
                     this.props.history.push("/page2")
                 }}>page2</button>
-                <p>{this.props.text}</p>
             </div>
 
         );
